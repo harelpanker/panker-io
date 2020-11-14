@@ -17,13 +17,14 @@ const Values = () => {
             <Text grey data-aos='fade-left'>
               Committed to constant improvement.
               <br />
-              The web development field required, due to constant change, to
-              always learn new things to stay at the top of the game and deliver
-              the best websites out there.
+              The web development field required, Due to the web development
+              field constantly changing, I am required to learn new things in
+              order to stay at the top of the game and deliver the best websites
+              out there.
             </Text>
             <Text grey data-aos='fade-left'>
-              I'm building websites with the "pixel-perfect" set of mind, making
-              sure, your website will be amazing - front to back!
+              I build websites with the "pixel-perfect" set of mind, making
+              sure, your website will be amazing!
             </Text>
           </TextGrid>
         </Flex>

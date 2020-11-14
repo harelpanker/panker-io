@@ -5,19 +5,19 @@ const howIDoItList = [
     id: uuid(),
     title: 'Plan',
     img: './images-how-we-do-it/plan-icon.svg',
-    text: 'We are working closely with our clients, making sure the website will shut their needs, follow a high standard so you can shine in the competitive environment on the web.'
+    text: "I'm working closely with our clients, making sure the website will shut their needs, follow a high standard so you can shine in the competitive environment on the web."
   },
   {
     id: uuid(),
     title: 'Design',
     img: './images-how-we-do-it/design-icon.svg',
-    text: 'We design products and services that put the experience of your customers and the positive impact on your business in the center. '
+    text: 'I design products and services that put the experience of your customers and the positive impact on your business in the center. '
   },
   {
     id: uuid(),
     title: 'Develop',
     img: './images-how-we-do-it/develop-icon.svg',
-    text: 'When we come to develop the website, we make sure to use the most modern tools out there, so your website will be fast, secure, pixel-perfect, and responsive.'
+    text: "When I come to develop the website, I'm make sure to use the most modern tools out there, so your website will be fast, secure, pixel-perfect, and responsive."
   },
 ];
 

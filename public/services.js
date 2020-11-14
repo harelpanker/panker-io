@@ -15,14 +15,14 @@ const services = [
     id: uuid(),
     title: 'hosting, security, and maintenance',
     body:
-      'Powered by Amazon Web Services & Fastly, We use the best hosting out there making sure your website is in good hands. You will never need to update your site or create a backup, we cover you!',
+      "Powered by Amazon Web Services & Fastly, I'm using the best hosting out there making sure your website is in good hands. You will never need to update your site or create a backup, You are covered!",
     icon: <VerifiedUserIcon />,
   },
   {
     id: uuid(),
     title: 'Search engine optimization (SEO)',
     body:
-      'We create the website with the best SEO practice in mind, as well as connecting it to google platforms so people can find you with ease.',
+      'I create the website with the best SEO practice in mind, as well as connecting it to google platforms so people can find you with ease.',
     icon: <AdjustIcon />,
   },
   // {

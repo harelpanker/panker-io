@@ -27,9 +27,8 @@ const WhatIDo = () => {
               development, HTML-CSS-JavaScrip to a bit more complex topics.
             </Text>
             <Text data-aos='fade-up'>
-              To build websites for my clients, I'm using the most modern tools
-              out there to give them the edge in the competitive investment of
-              the web.
+              I use the most modern tools to build my clients‘ website. This
+              gives them the edge in the competitive investment of the web.
             </Text>
             <Link href='/about'>
               <Button data-aos='fade-up'>Learn More</Button>
