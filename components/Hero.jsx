@@ -27,7 +27,7 @@ const slide = keyframes`
 const StyledHeader = styled.div`
   color: ${(props) => props.theme.colors.white};
   padding: 0 2rem;
-  min-height: 90vh;
+  min-height: 100vh;
   background: repeating-linear-gradient(
     -45deg,
     #000428 0%,

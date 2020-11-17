@@ -1,21 +1,25 @@
 import Link from 'next/link';
 import styled from 'styled-components';
 
-import Main from '../styled/Main';
 import Container from '../styled/Container';
 import Heading2 from '../styled/Heading2';
 import Text from '../styled/Text';
 import Strong from '../styled/Strong';
-import Button from '../styled/Button';
 
 const WhatIDo = () => {
   return (
-    <Main black>
+    <Main>
       <Container>
         <Grid>
+          <Image
+            src='./images/love-image.png'
+            alt='What we do'
+            loading='lazy'
+          />
           <Left>
             <Heading2 data-aos='fade-up'>
-              What I love <br />
+              What I love
+              <br />
               <Strong>Doing</Strong>
             </Heading2>
             <Text data-aos='fade-up'>
@@ -31,71 +35,57 @@ const WhatIDo = () => {
               gives them the edge in the competitive investment of the web.
             </Text>
             <Link href='/about'>
-              <Button data-aos='fade-up'>Learn More</Button>
+              <Btn data-aos='fade-up'>Learn More</Btn>
             </Link>
           </Left>
-          <Right data-aos='fade-left'>
-            <img
-              src='./images/idea.jpg'
-              alt='What we do'
-              width='100%'
-              loading='lazy'
-            />
-          </Right>
         </Grid>
       </Container>
     </Main>
   );
 };
+const Btn = styled.button`
+  margin-top: 3rem;
+  padding: 1rem 2.3rem;
+  color: ${(props) => props.theme.colors.white};
+  background-color: #cf0618;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out all !important;
 
+  &:hover {
+    transform: translateY(-3px);
+    background-color: rgba(207, 6, 23, 0.75);
+  }
+`;
+const Main = styled.main`
+  padding: 10rem 0;
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+
+  @media only screen and (max-width: ${(props) =>
+      props.theme.breakPoints.tablet}) {
+    padding: 7rem 0;
+  }
+`;
 const Grid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: 'left right';
-  justify-items: start;
-  gap: 0;
-
   width: 100%;
   height: 100%;
-
-  @media only screen and (max-width: ${(props) =>
-      props.theme.breakPoints.tablet}) {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      'right'
-      'left';
-  }
 `;
 const Left = styled.div`
-  grid-area: left;
-  padding: 10rem 6rem 10rem 0;
-
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  border-right: 1px solid ${(props) => props.theme.colors.white};
-
-  @media only screen and (max-width: ${(props) =>
-      props.theme.breakPoints.tablet}) {
-    padding: 2rem 1rem;
-    border-right: none;
-  }
+  max-width: 55rem;
 `;
-const Right = styled.div`
-  grid-area: right;
-  padding: 10rem 0 10rem 6rem;
+const Image = styled.img`
+  position: absolute;
   width: 100%;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  @media only screen and (max-width: ${(props) =>
-      props.theme.breakPoints.tablet}) {
-    padding: 2rem 1rem;
-    align-items: center;
-  }
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
 `;
 
 export default WhatIDo;

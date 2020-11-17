@@ -6,7 +6,7 @@ export default styled.a`
   text-transform: uppercase;
   font-size: 1.6rem;
   line-height: 2.4rem;
-  border: 1px solid ${(props) => props.theme.colors.black};
+  border: none;
   display: inline-block;
   margin-top: 2rem;
   text-decoration: none !important;
