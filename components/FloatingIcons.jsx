@@ -4,25 +4,30 @@ const FloatingIcons = () => {
   return (
     <Container>
       <Box>
-        <a
+        <StyledLink
           href='https://github.com/harelpanker'
           target='_blank'
           rel='noopener noreferrer'>
           <img src='./images-sm/github-icon.svg' alt='github' />
-        </a>
-        <a
+        </StyledLink>
+        <StyledLink
           href='https://www.linkedin.com/in/panker-harel/'
           target='_blank'
           rel='noopener noreferrer'>
           <img src='./images-sm/linkedin-icon.svg' alt='Linkedin' />
-        </a>
-        <a href='mailto:harelpanker@gmail.com'>
+        </StyledLink>
+        <StyledLink href='mailto:harelpanker@gmail.com'>
           <img src='./images-sm/gmail-icon.svg' alt='E-mail' />
-        </a>
+        </StyledLink>
       </Box>
     </Container>
   );
 };
+const StyledLink = styled.a`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 const Box = styled.nav`
   padding: 1rem 0;
   width: 100%;
