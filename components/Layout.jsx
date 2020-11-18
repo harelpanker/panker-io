@@ -1,5 +1,6 @@
 import Navbar from './navigation/Navbar';
 import Footer from './Footer';
+import FloatingIcons from './FloatingIcons';
 
 import styled from 'styled-components';
 
@@ -9,6 +10,7 @@ const Layout = ({ children }) => {
       <Content>
         <Navbar />
         {children}
+        <FloatingIcons />
       </Content>
       <Footer />
     </FlexWrapper>

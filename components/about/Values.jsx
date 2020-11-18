@@ -17,8 +17,9 @@ const Values = () => {
             <Text grey data-aos='fade-left'>
               Committed to constant improvement.
               <br />
+              <br />
               The web development field required, Due to the web development
-              field constantly changing, I am required to learn new things in
+              field constantly changing, I'm required to learn new things in
               order to stay at the top of the game and deliver the best websites
               out there.
             </Text>
