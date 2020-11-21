@@ -1,8 +1,8 @@
 import Skills from './Skills';
 import styled from 'styled-components';
-import Section from '../styled/Section';
-import Container from '../styled/Container';
-import Divider from '../styled/Divider';
+import Section from '../../styled/Section';
+import Container from '../../styled/Container';
+import Divider from '../../styled/Divider';
 
 const WhoAmI = () => {
   return (

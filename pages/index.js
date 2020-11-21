@@ -1,11 +1,11 @@
 import Head from 'next/head';
-import Hero from '../components/Hero'
-import WhatIDo from '../components/WhatIDo'
-import Services from '../components/Services'
-import Projects from '../components/Projects'
-import DoIt from '../components/DoIt'
-import WhoAmI from '../components/WhoAmI'
-import Clients from '../components/Clients'
+import Hero from '../components/home/Hero'
+import HeroDescription from '../components/home/HeroDescription'
+import Services from '../components/home/Services'
+import Projects from '../components/home/Projects'
+import DoIt from '../components/home/DoIt'
+import Clients from '../components/home/Clients'
+import WhoAmI from '../components/home/WhoAmI'
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
     </Head>
     <div data-scroll-container>
       <Hero />
-      <WhatIDo />
+      <HeroDescription />
       <Services />
       <Projects />
       <DoIt />

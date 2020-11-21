@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components';
-import Header from '../styled/Header';
-import Container from '../styled/Container';
-import Heading1 from '../styled/Heading1';
+import Header from '../../styled/Header';
+import Container from '../../styled/Container';
+import Heading1 from '../../styled/Heading1';
 
 const Hero = () => {
   return (

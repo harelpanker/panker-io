@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import styled from 'styled-components';
 
-import Container from '../styled/Container';
-import Heading2 from '../styled/Heading2';
-import Text from '../styled/Text';
-import Strong from '../styled/Strong';
+import Container from '../../styled/Container';
+import Heading2 from '../../styled/Heading2';
+import Text from '../../styled/Text';
+import Strong from '../../styled/Strong';
 
 const WhatIDo = () => {
   return (

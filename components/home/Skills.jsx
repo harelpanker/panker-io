@@ -1,10 +1,10 @@
 import styled from 'styled-components';
-import Section from '../styled/Section';
-import Container from '../styled/Container';
-import Heading2 from '../styled/Heading2';
-import Strong from '../styled/Strong';
+import Section from '../../styled/Section';
+import Container from '../../styled/Container';
+import Heading2 from '../../styled/Heading2';
+import Strong from '../../styled/Strong';
 
-import skills from '../public/skills';
+import skills from '../../public/skills';
 
 const Skills = () => {
   return (

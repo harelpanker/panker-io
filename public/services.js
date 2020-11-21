@@ -10,6 +10,10 @@ const services = [
     body:
       'I design products and services that put the experience of your customers and the positive impact on your business in the center.',
     icon: <PaletteIcon />,
+    colors: [
+      { id: uuid(), color: '#00c6ff' },
+      { id: uuid(), color: '#0072ff' },
+    ]
   },
   {
     id: uuid(),
@@ -17,6 +21,10 @@ const services = [
     body:
       "Powered by Amazon Web Services & Fastly, I'm using the best hosting out there making sure your website is in good hands. You will never need to update your site or create a backup, You are covered!",
     icon: <VerifiedUserIcon />,
+    colors: [
+      { id: uuid(), color: '#f12711' },
+      { id: uuid(), color: '#f5af19' },
+    ]
   },
   {
     id: uuid(),
@@ -24,6 +32,10 @@ const services = [
     body:
       'I create the website with the best SEO practice in mind, as well as connecting it to google platforms so people can find you with ease.',
     icon: <AdjustIcon />,
+    colors: [
+      { id: uuid(), color: '#ff00cc' },
+      { id: uuid(), color: '#333399' },
+    ]
   },
   // {
   //   id: uuid(),

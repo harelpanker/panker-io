@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import Headline3 from '../styled/Heading3';
-import Text from '../styled/Text';
+import Headline3 from '../../styled/Heading3';
+import Text from '../../styled/Text';
 
 const DoCard = ({ title, text, img }) => {
   return (

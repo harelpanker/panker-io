@@ -1,10 +1,10 @@
 import styled from 'styled-components';
-import Service from './Service';
+import Service from '../Service';
 
-import Section from '../styled/Section';
-import Container from '../styled/Container';
+import Section from '../../styled/Section';
+import Container from '../../styled/Container';
 
-import services from '../public/services';
+import services from '../../public/services';
 
 const Services = () => {
   return (

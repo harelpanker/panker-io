@@ -49,7 +49,7 @@ const Container = styled.div`
   right: auto;
   display: flex;
   align-items: flex-end;
-  z-index: 9;
+  z-index: 21;
 `;
 
 export default FloatingIcons;

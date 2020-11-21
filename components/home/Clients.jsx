@@ -1,15 +1,15 @@
 import { useState, useEffect } from 'react';
 import Client from './Client';
 import styled from 'styled-components';
-import Section from '../styled/Section';
-import Container from '../styled/Container';
-import Heading2 from '../styled/Heading2';
-import Strong from '../styled/Strong';
+import Section from '../../styled/Section';
+import Container from '../../styled/Container';
+import Heading2 from '../../styled/Heading2';
+import Strong from '../../styled/Strong';
 
 import Slider from 'react-slick';
 
-import clients from '../public/clients';
-import useWindowDimensions from '../hooks/useWindowDimensions';
+import clients from '../../public/clients';
+import useWindowDimensions from '../../hooks/useWindowDimensions';
 
 function Arrow(props) {
   const { className, style, onClick } = props;

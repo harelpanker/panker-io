@@ -10,17 +10,28 @@ import DesktopNav from './DesktopNav';
 
 const Navbar = () => {
   const [startWidth, setStartWidth] = useState(null);
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(!open);
+
   const { width } = useWindowDimensions();
   useEffect(() => setStartWidth(width), []);
 
   return (
-    <StyledHeader>
+    <StyledHeader
+      style={{
+        backdropFilter: `${!open ? 'saturate(180%) blur(5px)' : ''}`,
+        backgroundColor: `${!open ? 'rgba(0, 0, 0, 0.5)' : 'transparent'}`,
+      }}>
       <Container width='auto'>
         <StyledNav>
           <Link href='/'>
             <StyledImg src='/images/logo.svg' alt='Logo' />
           </Link>
-          {startWidth > 768 ? <DesktopNav /> : <MobileNav />}
+          {startWidth > 768 ? (
+            <DesktopNav />
+          ) : (
+            <MobileNav open={open} handleOpen={handleOpen} />
+          )}
         </StyledNav>
       </Container>
     </StyledHeader>
@@ -28,13 +39,13 @@ const Navbar = () => {
 };
 
 const StyledHeader = styled.header`
-  height: 55px;
+  height: 5.5rem;
   z-index: 20;
-  background-color: ${(props) => props.theme.colors.black};
   color: ${(props) => props.theme.colors.white};
   position: fixed;
   top: 0;
   width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 `;
 const StyledNav = styled.nav`
   height: 100%;
@@ -45,7 +56,8 @@ const StyledNav = styled.nav`
 `;
 const StyledImg = styled.img`
   cursor: pointer;
-  max-height: 4rem;
+  max-height: 5rem;
+  z-index: 21;
 `;
 
 export default Navbar;

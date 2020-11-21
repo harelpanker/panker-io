@@ -1,12 +1,9 @@
-import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import styled from 'styled-components';
 import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
 
-const MobileNav = () => {
-  const [open, setOpen] = useState(false);
-  const handleOpen = () => setOpen(!open);
+const MobileNav = ({ open, handleOpen }) => {
   return (
     <>
       <IconWrapper>
@@ -52,24 +49,23 @@ const MobileNav = () => {
     </>
   );
 };
-const Dropdown = styled(motion.nav)`
-  padding: 20px;
-  background-color: ${(props) => props.theme.colors.black};
-  color: ${(props) => props.theme.colors.white};
+
+const Dropdown = styled(motion.div)`
   width: 100%;
   position: absolute;
-  top: 50px;
+  top: 0;
   right: 0;
-  height: auto;
-  max-height: ${(props) => (!props.open ? '1000px' : '0')};
-  opacity: ${(props) => (!props.open ? '1' : '0')};
-  transition: all 0.6s ease-in-out;
+  height: 100vh;
+  padding: 5rem 2rem;
+  backdrop-filter: saturate(180%) blur(5px);
+  background-color: rgba(0, 0, 0, 0.5);
 `;
 const IconWrapper = styled.div`
   display: flex;
   align-items: center;
   margin-right: 1rem;
   cursor: pointer;
+  z-index: 21;
 `;
 const StyledUl = styled.ul`
   list-style-type: none;
@@ -98,4 +94,5 @@ const StyledUl = styled.ul`
     align-items: center;
   }
 `;
+
 export default MobileNav;

@@ -1,16 +1,16 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Project from './Project';
-import useWindowDimensions from '../hooks/useWindowDimensions';
+import useWindowDimensions from '../../hooks/useWindowDimensions';
 
-import projectsList from '../public/projects';
+import projectsList from '../../public/projects';
 
 import styled from 'styled-components';
-import Section from '../styled/Section';
-import Container from '../styled/Container';
-import Heading2 from '../styled/Heading2';
-import Strong from '../styled/Strong';
-import Button from '../styled/Button';
+import Section from '../../styled/Section';
+import Container from '../../styled/Container';
+import Heading2 from '../../styled/Heading2';
+import Strong from '../../styled/Strong';
+import Button from '../../styled/Button';
 
 const Projects = () => {
   const [startWidth, setStartWidth] = useState(null);
