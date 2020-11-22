@@ -17,7 +17,7 @@ const Footer = () => {
         <Container>
           <StyledFlex>
             <Link href='/'>
-              <StyledImg src='./images/logopanker.svg' alt='Logo' />
+              <StyledImg src='/images/logo.svg' alt='Logo' />
             </Link>
             <nav>
               <StyledList>

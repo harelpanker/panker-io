@@ -25,7 +25,7 @@ const Navbar = () => {
       <Container width='auto'>
         <StyledNav>
           <Link href='/'>
-            <StyledImg src='./images/logo-panker.png' alt='Logo' />
+            <StyledImg src='/images/logo.svg' alt='Logo' />
           </Link>
           {startWidth > 768 ? (
             <DesktopNav />
