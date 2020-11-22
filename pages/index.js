@@ -22,7 +22,7 @@ export default function Home() {
       <meta property="og:description" content="I build websites for companies, small businesses, restaurants, law firms, clinics, etc. I'm an expert in building and designing those websites using the most modern tools and technologies that exist." />
       <meta property="og:url" content="https://panker.io/" />
       <meta property="og:site_name" content="Harel Panker | Web Developer & Designer" />
-      <meta property="og:image" content="https://panker.io//images/open-grhpe-panker.png" />
+      <meta property="og:image" content="https://panker.io/images/open-grhpe-panker.png" />
       <meta property="og:image:width" content="300" />
       <meta property="og:image:height" content="300" />
     </Head>
