@@ -1,11 +1,10 @@
 import Head from 'next/head';
 import styled from 'styled-components';
-import Form from '../components/Form';
+import Form from '../components/contact/Form';
+import ContactInfo from '../components/contact/ContactInfo';
 
 import Header from '../styled/Header';
 import Container from '../styled/Container';
-import Heading1 from '../styled/Heading1';
-import Strong from '../styled/Strong';
 
 const contact = () => {
   return (
@@ -23,17 +22,7 @@ const contact = () => {
         <Container width='1100px'>
           <StyledGrid>
             <div>
-              <StyledFlex>
-                <Heading1 align='left' weight='500' black>
-                  Let's work <Strong>together</Strong>
-                </Heading1>
-                <StyledLink href='mailto:harelpanker@gmail.com'>
-                  harelpanker@gmail.com
-                </StyledLink>
-                <StyledLink href='tel:+4367763721014'>
-                  +43 677 63721014
-                </StyledLink>
-              </StyledFlex>
+              <ContactInfo />
               <Form />
             </div>
 
@@ -72,20 +61,6 @@ const StyledImg = styled.img`
   max-height: 70rem;
   border-radius: 0.5rem;
   max-width: 100%;
-`;
-const StyledFlex = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin-bottom: 1rem;
-`;
-const StyledLink = styled.a`
-  color: ${(props) => props.theme.colors.darkBlue};
-  text-decoration: underline;
-  font-size: 1.8rem;
-  &:hover {
-    color: ${(props) => props.theme.colors.blue};
-  }
 `;
 
 export default contact;

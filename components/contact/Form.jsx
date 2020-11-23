@@ -33,7 +33,7 @@ const Form = () => {
         name='message'
         fullWidth
         multiline
-        rows={3}
+        rows={5}
       />
       <button type='submit'>Submit</button>
     </StyledForm>
@@ -72,6 +72,9 @@ const StyledForm = styled.form`
     &:hover {
       background-color: ${(props) => props.theme.colors.black};
     }
+  }
+  textarea {
+    padding-top: 0.7rem;
   }
 
   @media only screen and (max-width: ${(props) =>
