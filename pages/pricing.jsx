@@ -6,7 +6,7 @@ const pricing = () => {
   return (
     <>
       <Head>
-        <title>Parler Design | Pricing</title>
+        <title>Harel panker | Pricing</title>
         <meta
           name='description'
           content='The cost you need to consider in creating, hosting, and maintaining a website.'
