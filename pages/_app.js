@@ -6,6 +6,10 @@ import Theme from '../styles/Theme';
 import Layout from '../components/Layout';
 import { StylesProvider } from '@material-ui/core/styles';
 
+
+import { useRouter } from 'next/router'
+import * as gtag from '../lib/gtag'
+
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
@@ -14,6 +18,17 @@ import 'aos/dist/aos.css';
 import Aos from 'aos';
 
 function MyApp({ Component, pageProps}) {
+
+  const router = useRouter()
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      gtag.pageview(url)
+    }
+    router.events.on('routeChangeComplete', handleRouteChange)
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange)
+    }
+  }, [router.events])
 
   useEffect(() => {
     Aos.init({
@@ -34,11 +49,12 @@ function MyApp({ Component, pageProps}) {
     }
   }, []);
 
-  return (<>
+  return (
+  <>
     <Head>
-    <title>My page</title>
-    <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
-  </Head>
+      <title>Web Next</title>
+      <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
+    </Head>
     <StylesProvider injectFirst>
       <ThemeProvider theme={Theme}>
         <Layout>
@@ -46,7 +62,8 @@ function MyApp({ Component, pageProps}) {
         </Layout>
         <GlobalStyles />
       </ThemeProvider>
-    </StylesProvider></>
+    </StylesProvider>
+    </>
   );
 }
 
