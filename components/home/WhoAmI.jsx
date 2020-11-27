@@ -11,12 +11,11 @@ const WhoAmI = () => {
         <Container>
           <Flex>
             <StyledImage
-              data-aos='fade-up'
               src='/images/harel.jpeg'
               alt='Harel Panker web developer and designer'
               loading='lazy'
             />
-            <Position data-aos='fade-up'>
+            <Position>
               <Name>Harel Panker</Name>
               <Profusion>Web developer & designer</Profusion>
             </Position>
