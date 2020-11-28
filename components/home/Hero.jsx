@@ -108,14 +108,14 @@ const MainHeader = styled.h1`
     background-clip: text;
     -webkit-background-clip: text;
     background-image: linear-gradient(-45deg, #00c6ff, #0072ff);
-    animation: ${change} 6s ease-in forwards;
+    animation: ${change} 1.5s ease-in forwards;
 
     &:nth-child(2) {
-      animation-delay: 2s;
+      animation-delay: 0.5s;
       background-image: linear-gradient(-45deg, #f12711, #f5af19);
     }
     &:nth-child(3) {
-      animation-delay: 4s;
+      animation-delay: 1s;
       background-image: linear-gradient(-45deg, #ff00cc, #333399);
     }
   }
