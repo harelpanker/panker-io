@@ -29,8 +29,8 @@ const Hero = () => {
 const change = keyframes`
 {
   0% { opacity: 0.1; }
-  50% { opacity: 1; }
-  100% { opacity: 0.1; }
+  100% { opacity: 1; }
+  /* 100% { opacity: 0.1; } */
 }
 `;
 
@@ -108,7 +108,8 @@ const MainHeader = styled.h1`
     background-clip: text;
     -webkit-background-clip: text;
     background-image: linear-gradient(-45deg, #00c6ff, #0072ff);
-    animation: ${change} 6s ease-in infinite;
+    animation: ${change} 6s ease-in forwards;
+
     &:nth-child(2) {
       animation-delay: 2s;
       background-image: linear-gradient(-45deg, #f12711, #f5af19);
