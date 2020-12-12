@@ -6,7 +6,7 @@ const skills = [
     { id: uuid(), name: 'Bootstrap' },
     { id: uuid(), name: 'Material-UI and' },
     { id: uuid(), name: 'Styled-Components' },
-    { id: uuid(), name: 'JavaScrip' },
+    { id: uuid(), name: 'JavaScript' },
     { id: uuid(), name: 'React.js, NextJS' },
     { id: uuid(), name: 'Figma' },
     { id: uuid(), name: 'Wordpress' },

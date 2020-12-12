@@ -9,7 +9,7 @@ const HeroDescription = () => {
       </Description>
       <Description data-aos='fade-up'>
         As a freelancer, my knowledge is vast, from the basics of web
-        development, HTML-CSS-JavaScrip to a bit more complex topics.
+        development, HTML-CSS-JavaScript to a bit more complex topics.
       </Description>
       <Description data-aos='fade-up'>
         I use the most modern tools to build my clients‘ website. This gives
