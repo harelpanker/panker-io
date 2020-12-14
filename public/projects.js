@@ -1,12 +1,12 @@
 import uuid from 'react-uuid';
 
 const projectsList = [
-  // {
-  //   id: uuid(),
-  //   name: 'Women \'N\' Fitness',
-  //   img: '/images-projects/img8.png',
-  //   liveURL: 'https://womennfitness.com/'
-  // },
+  {
+    id: uuid(),
+    name: 'Women \'N\' Fitness',
+    img: '/images-projects/img8.png',
+    liveURL: 'https://womennfitness.com/'
+  },
   {
     id: uuid(),
     name: 'Modern Family',
