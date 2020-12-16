@@ -24,7 +24,7 @@ const CardLink = styled.a`
   width: 100%;
   height: 100%;
   max-width: 30rem;
-  min-height: 45rem;
+  min-height: 50rem;
   margin: 0 auto;
 
   &:hover img:first-child {
@@ -34,7 +34,6 @@ const CardLink = styled.a`
   @media only screen and (max-width: ${(props) =>
       props.theme.breakPoints.tablet}) {
     width: 90%;
-    min-height: 50rem;
   }
 `;
 

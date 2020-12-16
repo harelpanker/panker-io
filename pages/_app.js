@@ -33,7 +33,7 @@ function MyApp({ Component, pageProps}) {
   useEffect(() => {
     Aos.init({
       // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-      offset: 200, // offset (in px) from the original trigger point
+      offset: 175, // offset (in px) from the original trigger point
       delay: 50, // values from 0 to 3000, with step 50ms
       duration: 500, // values from 0 to 3000, with step 50ms
       easing: 'ease-in-out', // default easing for AOS animations

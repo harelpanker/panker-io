@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import styled from 'styled-components';
 import Main from '../../styled/Main';
 import Container from '../../styled/Container';
@@ -5,20 +6,53 @@ import Container from '../../styled/Container';
 import projectsList from '../../public/projects';
 import Project from './Project';
 
+import Tabs from '@material-ui/core/Tabs';
+import Tab from '@material-ui/core/Tab';
+
 const Work = () => {
+  const [tab, setTab] = useState(0);
+
+  const handleChange = (event, newValue) => setTab(newValue);
+
   return (
     <Main>
       <Container width='990px'>
-        <Grid>
-          {projectsList.map((project) => (
-            <Project key={project.id} {...project} />
-          ))}
-        </Grid>
+        <Tabs
+          value={tab}
+          onChange={handleChange}
+          aria-label='Tabs the first show work of mein in Webflow and the second in React'
+          centered>
+          <StyledTab label='Webflow' />
+          <StyledTab label='React' />
+        </Tabs>
+        {tab === 0 && (
+          <Grid>
+            {projectsList
+              .filter((project) => project.type === 'webflow')
+              .map((project) => (
+                <Project key={project.id} {...project} />
+              ))}
+          </Grid>
+        )}
+        {tab === 1 && (
+          <Grid>
+            {projectsList
+              .filter((project) => project.type === 'react')
+              .map((project) => (
+                <Project key={project.id} {...project} />
+              ))}
+          </Grid>
+        )}
       </Container>
     </Main>
   );
 };
-
+const StyledTab = styled(Tab)`
+  padding: 6px 18px;
+  line-height: 1;
+  font-weight: 700;
+  font-size: 1.3rem;
+`;
 const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
