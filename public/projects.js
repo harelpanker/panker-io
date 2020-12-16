@@ -67,21 +67,21 @@ const projectsList = [
   {
     id: uuid(),
     name: 'unSplash',
-    img: '/images-projects/img10.png',
+    img: '/images-projects/unsplash.png',
     liveURL: 'https://unsplash-panker.vercel.app/',
     type: 'react'
   },
   {
     id: uuid(),
     name: 'Weather',
-    img: '/images-projects/img11.png',
+    img: '/images-projects/weather.png',
     liveURL: 'https://weather2021.vercel.app/',
     type: 'react'
   },
   {
     id: uuid(),
     name: 'Breaking Bad',
-    img: '/images-projects/img12.png',
+    img: '/images-projects/breaking.png',
     liveURL: 'https://breaking-bad-six.vercel.app/',
     type: 'react'
   },
