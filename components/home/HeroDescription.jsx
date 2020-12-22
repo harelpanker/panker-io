@@ -13,7 +13,7 @@ const HeroDescription = () => {
       </Description>
       <Description data-aos='fade-up'>
         I use the most modern tools to build my clients‘ website. This gives
-        them the edge in the competitive investment of the web.
+        them the edge in the competitive environment of the web.
       </Description>
     </StyledMain>
   );
