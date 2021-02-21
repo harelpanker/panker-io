@@ -32,7 +32,7 @@ const CardLink = styled.a`
 
   @media only screen and (max-width: ${(props) =>
       props.theme.breakPoints.tablet}) {
-    width: 90%;
+    width: 80%;
     min-height: 50rem;
   }
 `;

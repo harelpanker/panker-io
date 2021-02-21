@@ -47,7 +47,7 @@ const Projects = () => {
 const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 2.5rem;
+  gap: 5rem;
   width: 100%;
   margin-top: 10rem;
 
@@ -62,6 +62,7 @@ const Grid = styled.div`
   @media only screen and (max-width: ${(props) =>
       props.theme.breakPoints.mobile}) {
     grid-template-columns: 1fr;
+    gap: 3rem;
   }
 `;
 const Flex = styled.div`
