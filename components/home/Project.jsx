@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styled from 'styled-components';
 
 const Project = ({ name, img, liveURL }) => {
@@ -8,7 +9,7 @@ const Project = ({ name, img, liveURL }) => {
       target='_blank'
       rel='noreferrer'
       data-aos='fade-up'>
-      <CardBackground src={img} alt={name} />
+      <CardBackground src={img} alt={name} layout='fill' />
       <CardContent>
         <CardHeader>{name}</CardHeader>
       </CardContent>
@@ -25,6 +26,8 @@ const CardLink = styled.a`
   height: 100%;
   min-height: 45rem;
   margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
 
   &:hover img:first-child {
     transform: scale(1.05) translateZ(0);
@@ -37,10 +40,9 @@ const CardLink = styled.a`
   }
 `;
 
-const CardBackground = styled.img`
+const CardBackground = styled(Image)`
   height: 100%;
   width: 100%;
-  border-radius: 10px;
   bottom: 0;
   filter: brightness(0.75) saturate(1.2) contrast(0.85);
   left: 0;
@@ -53,7 +55,7 @@ const CardBackground = styled.img`
 `;
 const CardContent = styled.div`
   left: 0;
-  padding: 1rem;
+  padding: 2rem;
   position: absolute;
   bottom: 0;
 `;
