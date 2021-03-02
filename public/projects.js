@@ -17,6 +17,13 @@ const projectsList = [
   },
   {
     id: uuid(),
+    name: 'Portfolio',
+    img: '/images-projects/ofek-portfolio.png',
+    liveURL: 'https://www.ofekwolman.com/',
+    type: 'webflow',
+  },
+  {
+    id: uuid(),
     name: 'Parents Home',
     img: '/images-projects/img1.jpg',
     liveURL: 'https://www.parentshome.co.il/',

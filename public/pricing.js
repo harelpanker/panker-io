@@ -5,7 +5,7 @@ const pricingList = [
     id: uuid(),
     title: 'Single Page',
     img: './images/brush-icon.svg',
-    price: '349',
+    price: '350',
     tags: [
         { id: uuid(), tag: 'One Page' },
         { id: uuid(), tag: 'Lead Form to Bring in New Clients' },
@@ -19,7 +19,7 @@ const pricingList = [
     id: uuid(),
     title: 'Full Site',
     img: './images/puzzle-icon.svg',
-    price: '749',
+    price: '800',
     tags: [
         { id: uuid(), tag: 'Up to 10 Conversion-Optimized Pages' },
         { id: uuid(), tag: 'Lead Form to Bring in New Clients' },
@@ -35,7 +35,7 @@ const pricingList = [
     id: uuid(),
     title: 'E-Commerce',
     img: './images/tag-icon.svg',
-    price: '999',
+    price: '1200',
     tags: [
         { id: uuid(), tag: 'Up to 10 Conversion-Optimized Pages' },
         { id: uuid(), tag: 'Lead Form to Bring in New Clients' },
