@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import Main from '../../styled/Main';
 import Container from '../../styled/Container';
-import Text from '../../styled/Text';
 import Card from './Card';
 
 import pricingList from '../../public/pricing';
@@ -15,9 +14,6 @@ const Pricing = () => {
             <Card key={price.id} {...price} />
           ))}
         </PriceGrid>
-        <Text grey align='center'>
-          *All packages come with a Є39/mth Maintenance + Hosting Plan
-        </Text>
       </Container>
     </Main>
   );
