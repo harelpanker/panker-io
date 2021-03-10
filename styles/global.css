@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+::selection {
+  color: #09f;
+  background: rgb(0, 2, 31);
+}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #09f;
+}
+*::-webkit-scrollbar {
+  width: 12px;
+  height: 100%;
+}
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #09f;
+  border: transparent;
+}
