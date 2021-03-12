@@ -8,10 +8,10 @@ const skills = [
   { id: uuid(), name: 'Google' },
   { id: uuid(), name: 'Material-UI' },
   { id: uuid(), name: 'Styled-Components' },
-  { id: uuid(), name: 'Figma' },
-  { id: uuid(), name: 'Webflow' },
   { id: uuid(), name: 'SEO' },
   { id: uuid(), name: 'UI/UX' },
+  { id: uuid(), name: 'Figma' },
+  { id: uuid(), name: 'Webflow' },
 ];
 
 export default skills;
