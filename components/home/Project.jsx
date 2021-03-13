@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Project = ({ name, img, liveURL }) => {
   return (
     <CardLink
-      className='card'
+      // className='card'
       href={liveURL}
       target='_blank'
       rel='noreferrer'
@@ -24,7 +24,7 @@ const CardLink = styled.a`
   background-color: transparent;
   width: 100%;
   height: 100%;
-  min-height: 45rem;
+  min-height: 50rem;
   margin: 0 auto;
   border-radius: 10px;
   overflow: hidden;
@@ -36,7 +36,7 @@ const CardLink = styled.a`
   @media only screen and (max-width: ${(props) =>
       props.theme.breakPoints.tablet}) {
     width: 80%;
-    min-height: 50rem;
+    max-width: 28rem;
   }
 `;
 
