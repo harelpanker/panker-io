@@ -5,7 +5,7 @@ const projectsList = [
     id: uuid(),
     name: "Women 'N' Fitness",
     img: '/images-projects/img8.png',
-    liveURL: 'https://women-n-fitness.webflow.io/',
+    liveURL: 'https://www.womennfitness.com/',
     type: 'webflow',
   },
   {
@@ -34,6 +34,13 @@ const projectsList = [
     name: 'Take A Seat',
     img: '/images-projects/img2.jpg',
     liveURL: 'https://www.takeaseat.at/',
+    type: 'webflow',
+  },
+  {
+    id: uuid(),
+    name: 'UX Nick',
+    img: '/images-projects/nick.png',
+    liveURL: 'https://www.uxnick.design/',
     type: 'webflow',
   },
   {
