@@ -24,6 +24,13 @@ const projectsList = [
   },
   {
     id: uuid(),
+    name: 'In Progress',
+    img: '/images-projects/Christianes-Elderberry.png',
+    liveURL: 'https://christianes.webflow.io/',
+    type: 'webflow',
+  },
+  {
+    id: uuid(),
     name: 'Parents Home',
     img: '/images-projects/img1.jpg',
     liveURL: 'https://www.parentshome.co.il/',
