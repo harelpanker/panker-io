@@ -32,11 +32,11 @@ const MobileNav = ({ open, handleOpen }) => {
                   <a>Projects</a>
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href='/pricing'>
                   <a>Pricing</a>
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link href='/contact'>
                   <a>Contact</a>

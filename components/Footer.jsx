@@ -36,11 +36,11 @@ const Footer = () => {
                     <StyledLink>projects</StyledLink>
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link href='/pricing'>
                     <StyledLink>pricing</StyledLink>
                   </Link>
-                </li>
+                </li> */}
                 <li>
                   <Link href='/contact'>
                     <StyledLink>contact</StyledLink>
