@@ -5,7 +5,7 @@ const projectsList = [
     id: uuid(),
     name: "Women 'N' Fitness",
     img: '/images-projects/img8.png',
-    liveURL: 'https://www.womennfitness.com/',
+    liveURL: 'https://women-n-fitness.webflow.io/',
     type: 'webflow',
   },
   {
