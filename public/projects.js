@@ -10,13 +10,6 @@ const projectsList = [
   },
   {
     id: uuid(),
-    name: 'Validify.app',
-    img: '/images-projects/validify.png',
-    liveURL: 'https://www.validify.app/',
-    type: 'webflow',
-  },
-  {
-    id: uuid(),
     name: 'Portfolio',
     img: '/images-projects/ofek-portfolio.png',
     liveURL: 'https://www.ofekwolman.com/',
@@ -24,9 +17,23 @@ const projectsList = [
   },
   {
     id: uuid(),
-    name: 'In Progress',
+    name: "Christiane's Farmacy",
     img: '/images-projects/Christianes-Elderberry.png',
-    liveURL: 'https://christianes.webflow.io/',
+    liveURL: 'https://www.christianes-farmacy.com/',
+    type: 'webflow',
+  },
+  {
+    id: uuid(),
+    name: 'The Bigger Picture',
+    img: '/images-projects/thebiggerpictur.png',
+    liveURL: 'https://www.thebiggerpicturepod.com/',
+    type: 'webflow',
+  },
+  {
+    id: uuid(),
+    name: 'Validify.app',
+    img: '/images-projects/validify.png',
+    liveURL: 'https://www.validify.app/',
     type: 'webflow',
   },
   {
