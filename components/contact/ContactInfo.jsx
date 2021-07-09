@@ -11,7 +11,7 @@ const ContactInfo = () => {
       <StyledLink href='mailto:harelpanker@gmail.com'>
         harelpanker@gmail.com
       </StyledLink>
-      <StyledLink href='tel:+4367763721014'>+43 677 63721014</StyledLink>
+      <StyledLink href='tel:+4367763721016'>+43 677 63721016</StyledLink>
     </StyledFlex>
   );
 };
