@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import styled from 'styled-components';
 import useWindowDimensions from '../../hooks/useWindowDimensions';
 
@@ -25,7 +26,12 @@ const Navbar = () => {
       <Container width='auto'>
         <StyledNav>
           <Link href='/'>
-            <StyledImg src='/images/logo.svg' alt='Logo' />
+            <StyledImg
+              src='/images/logo.svg'
+              alt='Logo'
+              width={150}
+              height={50}
+            />
           </Link>
           {startWidth > 768 ? (
             <DesktopNav />
@@ -54,7 +60,7 @@ const StyledNav = styled.nav`
   justify-content: space-between;
   align-items: center;
 `;
-const StyledImg = styled.img`
+const StyledImg = styled(Image)`
   cursor: pointer;
   max-height: 5rem;
   z-index: 21;

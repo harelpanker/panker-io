@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Image from 'next/image';
 
 const FloatingIcons = () => {
   return (
@@ -8,16 +9,31 @@ const FloatingIcons = () => {
           href='https://github.com/harelpanker'
           target='_blank'
           rel='noopener noreferrer'>
-          <img src='./images-sm/github-icon.svg' alt='github' />
+          <Image
+            src='/images-sm/github-icon.svg'
+            alt='github'
+            width={23}
+            height={23}
+          />
         </StyledLink>
         <StyledLink
           href='https://www.linkedin.com/in/panker-harel/'
           target='_blank'
           rel='noopener noreferrer'>
-          <img src='./images-sm/linkedin-icon.svg' alt='Linkedin' />
+          <Image
+            src='/images-sm/linkedin-icon.svg'
+            alt='Linkedin'
+            width={23}
+            height={23}
+          />
         </StyledLink>
         <StyledLink href='mailto:harelpanker@gmail.com'>
-          <img src='./images-sm/gmail-icon.svg' alt='E-mail' />
+          <Image
+            src='/images-sm/gmail-icon.svg'
+            alt='E-mail'
+            width={23}
+            height={23}
+          />
         </StyledLink>
       </Box>
     </Container>
