@@ -1,4 +1,5 @@
 import Skills from './Skills';
+import Image from 'next/image';
 import styled from 'styled-components';
 import Section from '../../styled/Section';
 import Container from '../../styled/Container';
@@ -13,7 +14,8 @@ const WhoAmI = () => {
             <StyledImage
               src='/images/harel.jpeg'
               alt='Harel Panker web developer and designer'
-              loading='lazy'
+              width={400}
+              height={533}
             />
             <Position>
               <Name>Harel Panker</Name>
@@ -35,7 +37,7 @@ const Flex = styled.div`
   margin: 0 auto;
   max-width: 55rem;
 `;
-const StyledImage = styled.img`
+const StyledImage = styled(Image)`
   width: 100%;
   max-width: 40rem;
   border-radius: 0.5rem;

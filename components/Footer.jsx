@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import Image from 'next/image';
 import CTA from './CTA';
 import styled from 'styled-components';
 import StyledFooter from '../styled/StyledFooter';
@@ -17,7 +18,12 @@ const Footer = () => {
         <Container>
           <StyledFlex>
             <Link href='/'>
-              <StyledImg src='/images/logo.svg' alt='Logo' />
+              <StyledImg
+                src='/images/logo.svg'
+                alt='Logo'
+                width={150}
+                height={50}
+              />
             </Link>
             <nav>
               <StyledList>
@@ -83,7 +89,7 @@ const StyledList = styled.ul`
     text-align: center;
   }
 `;
-const StyledImg = styled.img`
+const StyledImg = styled(Image)`
   cursor: pointer;
 `;
 const StyledLink = styled.a`
