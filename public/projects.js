@@ -117,7 +117,7 @@ const projectsList = [
     id: uuid(),
     name: 'Breaking Bad',
     img: '/images-projects/breaking.png',
-    liveURL: 'https://breaking-bad-six.vercel.app/',
+    liveURL: 'https://breaking-bad-new.vercel.app/',
     type: 'react',
   },
 ];
