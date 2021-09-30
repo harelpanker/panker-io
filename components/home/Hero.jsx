@@ -107,8 +107,9 @@ const MainHeader = styled.h1`
     opacity: 0.1;
     background-clip: text;
     -webkit-background-clip: text;
+    animation: ${change} 1.5s ease-in;
+
     background-image: linear-gradient(-45deg, #00c6ff, #0072ff);
-    animation: ${change} 1.5s ease-in forwards;
 
     &:nth-child(2) {
       animation-delay: 0.5s;

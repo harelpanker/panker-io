@@ -12,14 +12,12 @@ const Skills = () => {
       <Container>
         <Grid>
           <div>
-            <Heading2 black data-aos='fade-right'>
+            <Heading2 black>
               Some of my <Strong>Skills</Strong>
             </Heading2>
             <List>
               {skills.map((skill) => (
-                <ListItem key={skill.id} data-aos='fade-right'>
-                  {skill.name}
-                </ListItem>
+                <ListItem key={skill.id}>{skill.name}</ListItem>
               ))}
             </List>
           </div>
