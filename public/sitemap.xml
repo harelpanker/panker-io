@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://panker-io.vercel.app/</loc>
+    <loc>https://panker.io/</loc>
     <lastmod>2020-11-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1</priority>
   </url>
   <url>
-      <loc>https://panker-io.vercel.app/about/</loc>
+      <loc>https://panker.io/about/</loc>
    </url>
   <url>
-      <loc>https://panker-io.vercel.app/projects/</loc>
+      <loc>https://panker.io/projects/</loc>
    </url>
   <url>
-      <loc>https://panker-io.vercel.app/pricing/</loc>
+      <loc>https://panker.io/pricing/</loc>
    </url>
   <url>
-      <loc>https://panker-io.vercel.app/contact/</loc>
+      <loc>https://panker.io/contact/</loc>
    </url>
 </urlset>
