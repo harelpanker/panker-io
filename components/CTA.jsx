@@ -19,7 +19,7 @@ const CTA = () => {
           </Heading3>
           <Text align='center'>
             Wanna start working together? do you have a question? or just say
-            hi? feel free to content me!
+            hi? feel free to contact me!
           </Text>
           <Link href='/contact'>
             <Button>Contact Me</Button>
